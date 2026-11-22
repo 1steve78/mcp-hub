@@ -1,0 +1,8 @@
+app:
+  name: "mcp-hub"
+  version: "0.1.0-dev"
+
+ollama:
+  base_url: "http://localhost:11434"
+  default_model: "qwen3:1.7b"
+  timeout_seconds: 60

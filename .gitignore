@@ -1,0 +1,17 @@
+# Build artifacts
+mcp-hub
+bin/
+
+# Environment & secrets
+.env
+.env.*
+
+# Local configuration
+config.local.yaml
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
