@@ -45,7 +45,8 @@ func process(arg []string) (string, error) {
 		return getOllamaModels(cfg.Ollama)
 
 	case "chat":
-		return "chat is called", nil
+		client := ollama.NewClient(cfg.Ollama)
+		return runChat(client, cfg.Ollama, arg[1:])
 
 	case "help":
 		return printHelp(), nil
